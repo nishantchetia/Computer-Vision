@@ -52,3 +52,12 @@ Python: cv.CAP_PROP_FRAME_WIDTH: Width of the frames in the video stream.
 Python: cv.CAP_PROP_FRAME_HEIGHT: Height of the frames in the video stream. 
 
 Color image loaded by OpenCV is in BGR mode. But Matplotlib displays in RGB mode. 
+
+cv2.line() : Used to draw line on an image.
+
+cv2.rectangle() : Used to draw rectangle on an image.
+
+cv2.circle() : Used to draw circle on an image.
+
+cv2.putText() : Used to write text on image.
+

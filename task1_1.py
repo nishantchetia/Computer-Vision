@@ -10,7 +10,7 @@ while True:
 
 
     # Fliping the image vertically
-    vid_flip = cv2.flip(frame,0)
+    vid_flip = cv2.flip(frame,1)
 
     # getting the images in one window
     combined_window = np.hstack([frame,vid_flip])

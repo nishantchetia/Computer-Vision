@@ -1,27 +1,32 @@
 import cv2
-import numpy as np     # To stack the frames horizontally
 
-video = cv2.VideoCapture(0)
-x = 0
-while True:
-    x = x+1
-    ret, frame= video.read()
+cap = cv2.VideoCapture(0)
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 
+flipped = False
+print(cap.isOpened())
+while (cap.isOpened()):
+    ret, frame = cap.read()
+    if ret == True:
+        
+        out.write(frame)
 
+        #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # Fliping the image vertically
-    vid_flip = cv2.flip(frame,1)
+        if not flipped:
+            cv2.imshow('frame', frame)
+            flipped = True
+        elif flipped:
+            gray = cv2.flip(frame, 0)
+            cv2.imshow('frame', frame)
+            flipped = False
 
-    # getting the images in one window
-    combined_window = np.hstack([frame,vid_flip])
-
-    # portraying the window
-    cv2.imshow("Combined videos ",combined_window)
-    key=cv2.waitKey(1)
-
-    if key==ord('q'):
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    else:
         break
-print(x)
 
-video.release()
-cv2.destroyAllWindows
+cap.release()
+out.release()
+cv2.destroyAllWindows()

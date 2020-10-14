@@ -9,16 +9,14 @@ print(cap.isOpened())
 while (cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
-        
-        out.write(frame)
 
-        #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        out.write(frame)
 
         if not flipped:
             cv2.imshow('frame', frame)
             flipped = True
         elif flipped:
-            gray = cv2.flip(frame, 0)
+            frame = cv2.flip(frame, 0)
             cv2.imshow('frame', frame)
             flipped = False
 

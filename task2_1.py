@@ -4,8 +4,8 @@ cap = cv2.VideoCapture(0)
 
 w_frame, h_frame = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fps, frames = cap.get(cv2.CAP_PROP_FPS), cap.get(cv2.CAP_PROP_FRAME_COUNT)
-x,y,h,w = 0,0,25,25
-
+h=w=input("enter side of square")
+x=y= w_frame/2
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('result.avi', fourcc, fps, (w, h))
 
@@ -15,7 +15,7 @@ while (cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
         crop_frame = frame[y:y + h, x:x + w]
-    
+
 
         if not flipped:
             cv2.imshow('frame', crop_frame)

@@ -64,3 +64,6 @@ cv2.circle() : Used to draw circle on an image.
 cv2.putText() : Used to write text on image.
 
 Capturing mouse click events with Python and OpenCV is easy. we just need to create a callback function and call  this callback function using cv2.setMouseCallback('image', click_event_callback_function) method
+
+
+OpenCV supports for detecting of mouse events. These Mouse events include mouse clicks (like  left-button down, left-button up, left-button double-click etc) and movements over an attached OpenCV window. Capturing mouse click events with Python and OpenCV is easy. we just need to create a callback function and call  this callback function using cv2.setMouseCallback('image', click_event_callback_function) method

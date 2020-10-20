@@ -67,3 +67,24 @@ Capturing mouse click events with Python and OpenCV is easy. we just need to cre
 
 
 OpenCV supports for detecting of mouse events. These Mouse events include mouse clicks (like  left-button down, left-button up, left-button double-click etc) and movements over an attached OpenCV window. Capturing mouse click events with Python and OpenCV is easy. we just need to create a callback function and call  this callback function using cv2.setMouseCallback('image', click_event_callback_function) method
+
+img.shape returns a tuple of number of rows, columns, and channels
+
+img.size returns Total number of pixels is accessed
+
+img.dtype returns Image datatype is obtained
+
+cv2.split(img) - output vector of arrays; the arrays themselves are reallocated, if needed.
+
+cv2.merge((b,g,r)) - The number of channels will be the total number of channels in the matrix array.
+
+
+cv2.resize - resize the image
+
+
+dst = cv2.add(img, img2) - Calculates the per-element sum of two arrays or an array and a scalar.
+
+
+dst = cv2.addWeighted(img, .2, img2, .8, 0) - Calculates the weighted sum of two arrays.
+
+

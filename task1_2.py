@@ -4,22 +4,20 @@ cap = cv2.VideoCapture(0)
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 
-flipped = False
+count = 0
 print(cap.isOpened())
 while (cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
-
         out.write(frame)
 
-        if not flipped:
+        if count%5 != 0:
             cv2.imshow('frame', frame)
-            flipped = True
-        elif flipped:
-            frame = cv2.flip(frame, 1)
+        else:
+            frame = cv2.flip(frame,1)
             cv2.imshow('frame', frame)
-            flipped = False
 
+        count += 1
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     else:

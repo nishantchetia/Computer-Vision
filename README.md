@@ -89,3 +89,6 @@ dst = cv2.addWeighted(img, .2, img2, .8, 0) - Calculates the weighted sum of two
 
 
 Bitwise operations likebitwise_and(), bitwise_or(), bitwise_xor(), and bitwise_not() are useful when working with masks
+
+
+Trackbar as the Color Palette and changing colored image to grayscale image using Trackbar switch. We can also get get user input with OpenCV trackbars.

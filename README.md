@@ -88,3 +88,4 @@ dst = cv2.add(img, img2) - Calculates the per-element sum of two arrays or an ar
 dst = cv2.addWeighted(img, .2, img2, .8, 0) - Calculates the weighted sum of two arrays.
 
 
+Bitwise operations likebitwise_and(), bitwise_or(), bitwise_xor(), and bitwise_not() are useful when working with masks

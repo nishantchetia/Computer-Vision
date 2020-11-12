@@ -92,3 +92,19 @@ Bitwise operations likebitwise_and(), bitwise_or(), bitwise_xor(), and bitwise_n
 
 
 Trackbar as the Color Palette and changing colored image to grayscale image using Trackbar switch. We can also get get user input with OpenCV trackbars.
+
+
+ Implementing color and shape-based object detection and tracking using  hue-saturation-value (HSV) color model. For Choosing the correct upper and lower HSV boundaries for color detection with`cv::inRange` (OpenCV) we will use trackbar.
+
+
+Simple Image Thresholding is used for image segmentation. Thresholding is the simplest method of image segmentation. From a grayscale image, thresholding can be used to create binary images.
+
+In Thresholding we Pick a threshold T.
+
+1.Pixels above threshold get new intensity A.
+
+2.Pixels above threshold get new intensity B.  
+
+In Thresholding, pixels that are alike in gray scale(or in some other feature) are grouped together.
+
+

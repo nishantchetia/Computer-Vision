@@ -123,3 +123,7 @@ matplotlib is a User friendly, but powerful, plotting library for python. I is c
 
 
 different functions like : cv.erode(), cv.dilate(), cv.morphologyEx() etc.
+
+
+different morphological operations like 2D Convolution ( Image Filtering ) and  Image Blurring (Image Smoothing) using Averaging, Gaussian Blurring, Median Blurring, Bilateral Filtering etc. We will see different functions like : cv.filter2D(), cv.blur(), cv.GaussianBlur(), cv.medianBlur(), cv.bilateralFilter() etc.
+

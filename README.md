@@ -129,3 +129,22 @@ different morphological operations like 2D Convolution ( Image Filtering ) and  
 
 
 Image Gradients and Edge Detection with OpenCV. OpenCV provides three types of gradient methods or High-pass filters, Sobel, Scharr and Laplacian.
+
+OpenCV provides method called Canny for Canny edge detector
+
+The Canny edge detection algorithm is broken down to 5 steps:
+
+
+Noise reduction;
+
+Gradient calculation;
+
+Non-maximum suppression;
+
+Double threshold;
+
+Edge Tracking by Hysteresis.
+
+
+
+

@@ -108,3 +108,18 @@ In Thresholding we Pick a threshold T.
 In Thresholding, pixels that are alike in gray scale(or in some other feature) are grouped together.
 
 
+Adaptive Thresholding algorithm provide the image in which Threshold values vary over the image as a  function of  local image characteristics. So Adaptive Thresholding involves two following steps
+
+(i) Divide image into strips 
+
+(ii) Apply global threshold method to each strip.
+
+
+
+So in Adaptive Thresholding, Threshold depends on both f(x,y) and p(x,y). Adaptive thresholding changes the threshold dynamically over the image. Adaptive thresholding typically takes a gray scale or color image as input and, in the simplest implementation, outputs a binary image representing the segmentation.
+
+
+matplotlib is a User friendly, but powerful, plotting library for python. I is commonly used with OpenCv images. pylab is a module in matplotlib that gets installed alongside matplotlib; and matplotlib.pyplot is a module in matplotlib. matplotlib is a python 2D plotting library which produces publication quality figures in a variety of hardcopy formats.
+
+
+different functions like : cv.erode(), cv.dilate(), cv.morphologyEx() etc.

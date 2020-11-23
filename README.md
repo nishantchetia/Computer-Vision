@@ -150,3 +150,7 @@ There are two kinds of Image Pyramids. 1) Gaussian Pyramid and 2) Laplacian Pyra
 
 Gaussian pyramids use cv.pyrDown() and cv.pyrUp() functions.
 
+
+cv2.findContours(), cv2.drawContours().
+
+These function retrieves contours from the binary image. The contours are a useful tool for shape analysis and object detection and recognition. 

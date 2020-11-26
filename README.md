@@ -154,3 +154,8 @@ Gaussian pyramids use cv.pyrDown() and cv.pyrUp() functions.
 cv2.findContours(), cv2.drawContours().
 
 These function retrieves contours from the binary image. The contours are a useful tool for shape analysis and object detection and recognition. 
+
+
+Template Matching is a method for searching and finding the location of a template image in a larger image. OpenCV comes with a function cv.matchTemplate() for this purpose.
+
+

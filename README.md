@@ -159,3 +159,23 @@ These function retrieves contours from the binary image. The contours are a usef
 Template Matching is a method for searching and finding the location of a template image in a larger image. OpenCV comes with a function cv.matchTemplate() for this purpose.
 
 
+OpenCV implements two kind of Hough Line Transforms
+
+The Standard Hough Transform  (HoughLines method)
+
+The Probabilistic Hough Line Transform  (HoughLinesP method)
+
+lines = cv.HoughLines(image, rho, theta, threshold)
+
+image : source image.
+
+lines : Output vector of lines. Each line is represented by a 2 or 3 element vector (ρ,θ) or (ρ,θ,votes) . 
+
+       ρ is the distance from the coordinate origin (0,0) (top-left corner of the image). θ is the line rotation angle in radians . votes is the value of accumulator.
+       
+rho : Distance resolution of the accumulator in pixels.
+
+theta : Angle resolution of the accumulator in radians.
+
+threshold : Accumulator threshold parameter. Only those lines are returned that get enough votes ( greater then threshold ).
+
